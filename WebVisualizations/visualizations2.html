@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Madison, Arkansas Analysis</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="Resources/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="Resources/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">COVID-19 Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="visualizations1.html">Visualization 1</a>
+                  <a class="dropdown-item active" href="visualizations2.html">Visualization 2</a>
+                  <a class="dropdown-item" href="visualizations3.html">Visualization 3</a>
+                  <a class="dropdown-item" href="visualizations4.html">Visualization 4</a>                  
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparison
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li> 
+          </ul>         
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row" >
+            <div class="container jumbotron col-md-7" >
+                <h1 >Madison, Arkansas</h1>
+                <hr>
+                <br>
+                <div class="container" >
+                    <img class="col-md-12 img-fluid rounded" alt="Image of dual line graph reflecting mobility and COVID-19 trends in Madison, Arkansas" src= "Resources\assets\images\Linegraph_sample2.png">
+                <br>
+                <br>
+                <p>In Madison, Arkansas Mobility rates appear to have a positive correlation with COVID rates by viewing the line graph. Pearson's correlation test corrobates this hypothesis showing a low p-value 1.02e-05 and positive correlation coefficeint of 0.35 </p>
+                    </div>
+            </div>
+            <div class="container jumbotron col-md-4" id="jumbotronics" >
+                <h2>Visualizations</h1>
+                <hr>
+                <br>
+                <div class="row" >
+                    <div class="container col-md-5 " >
+                    <a href="visualizations1.html">
+                    <img class="img-fluid rounded float-left img-thumbnail" alt="Image of dual line graph reflecting mobility and COVID-19 trends in Tehama, California" src= "Resources\assets\images\Linegraph_sample1.png">
+                    </a>
+                    </div>
+                    <div class="container col-md-7 " >
+                    <a href="visualizations2.html">
+                    <img class="img-fluid rounded float-right" alt="Image of dual line graph reflecting mobility and COVID-19 trends in Madison, Arkansas" src= "Resources\assets\images\Linegraph_sample2.png">
+                    </a>
+                    </div>
+                    </div>
+                <br>
+                <div class="row" >
+                    <div class="container col-md-5 " >
+                    <a href="visualizations3.html">
+                    <img class = "img-fluid rounded float-left" alt="Image of dual line graph reflecting mobility and COVID-19 trends in Sebastian, Arkansas" src= "Resources\assets\images\Linegraph_sample3.png">
+                    </a>
+                    </div>
+                    <div class="container col-md-5 " >
+                    <a href="visualizations4.html">
+                    <img class = "img-fluid rounded float-right" alt="Image of dual line graph reflecting mobility and COVID-19 trends in Meade, South Dakota" src= "Resources\assets\images\Linegraph_sample4.png">
+                    </a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>

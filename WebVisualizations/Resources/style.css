@@ -1,0 +1,22 @@
+.img {
+    border-radius: 8px;
+    padding: 5px;
+    width: 150px;
+  }
+
+
+  .column {
+    border-radius: 8px;
+    padding: 5px;
+    width: 50px;
+  }
+
+  .mod.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+
+  #jumbotronics {
+    margin-bottom: 200px; }
+    

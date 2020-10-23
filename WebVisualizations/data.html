@@ -1,0 +1,4636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizations Data</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="Resources/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="Resources/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">COVID-19 Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="visualizations1.html">Visualization 1</a>
+                  <a class="dropdown-item" href="visualizations2.html">Visualization 2</a>
+                  <a class="dropdown-item" href="visualizations3.html">Visualization 3</a>
+                  <a class="dropdown-item" href="visualizations4.html">Visualization 4</a>                  
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparison
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li> 
+          </ul>         
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row" >
+            <div class="container jumbotron col-md-12" >
+                <h1>Data</h1>
+        <hr>
+        <br>
+        
+        <h5>The following table includes all of the data used for plotting during this project</h5>
+        <br>
+        <div class="table-responsive">
+    <table class="table">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Index</th>
+      <th>Area Name</th>
+      <th>Date</th>
+      <th>Daily Cases</th>
+      <th>Mobility % change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bingham, Idaho</td>
+      <td>3/20/2020</td>
+      <td>1</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bingham, Idaho</td>
+      <td>3/21/2020</td>
+      <td>0</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bingham, Idaho</td>
+      <td>3/22/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bingham, Idaho</td>
+      <td>3/23/2020</td>
+      <td>0</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Bingham, Idaho</td>
+      <td>3/24/2020</td>
+      <td>0</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Bingham, Idaho</td>
+      <td>3/25/2020</td>
+      <td>0</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Bingham, Idaho</td>
+      <td>3/26/2020</td>
+      <td>0</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Bingham, Idaho</td>
+      <td>3/27/2020</td>
+      <td>0</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Bingham, Idaho</td>
+      <td>3/28/2020</td>
+      <td>0</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bingham, Idaho</td>
+      <td>3/29/2020</td>
+      <td>0</td>
+      <td>-0.31</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Bingham, Idaho</td>
+      <td>3/30/2020</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Bingham, Idaho</td>
+      <td>3/31/2020</td>
+      <td>1</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Bingham, Idaho</td>
+      <td>4/1/2020</td>
+      <td>0</td>
+      <td>-0.03</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Bingham, Idaho</td>
+      <td>4/2/2020</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Bingham, Idaho</td>
+      <td>4/3/2020</td>
+      <td>0</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Bingham, Idaho</td>
+      <td>4/4/2020</td>
+      <td>0</td>
+      <td>-0.05</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Bingham, Idaho</td>
+      <td>4/5/2020</td>
+      <td>0</td>
+      <td>-0.39</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Bingham, Idaho</td>
+      <td>4/6/2020</td>
+      <td>0</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Bingham, Idaho</td>
+      <td>4/7/2020</td>
+      <td>0</td>
+      <td>-0.02</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Bingham, Idaho</td>
+      <td>4/8/2020</td>
+      <td>0</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Bingham, Idaho</td>
+      <td>4/9/2020</td>
+      <td>0</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Bingham, Idaho</td>
+      <td>4/10/2020</td>
+      <td>0</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Bingham, Idaho</td>
+      <td>4/11/2020</td>
+      <td>0</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Bingham, Idaho</td>
+      <td>4/12/2020</td>
+      <td>0</td>
+      <td>-0.43</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Bingham, Idaho</td>
+      <td>4/13/2020</td>
+      <td>0</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Bingham, Idaho</td>
+      <td>4/14/2020</td>
+      <td>0</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Bingham, Idaho</td>
+      <td>4/15/2020</td>
+      <td>0</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Bingham, Idaho</td>
+      <td>4/16/2020</td>
+      <td>1</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Bingham, Idaho</td>
+      <td>4/17/2020</td>
+      <td>0</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Bingham, Idaho</td>
+      <td>4/18/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Bingham, Idaho</td>
+      <td>4/19/2020</td>
+      <td>0</td>
+      <td>-0.19</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Bingham, Idaho</td>
+      <td>4/20/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Bingham, Idaho</td>
+      <td>4/21/2020</td>
+      <td>0</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Bingham, Idaho</td>
+      <td>4/22/2020</td>
+      <td>0</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Bingham, Idaho</td>
+      <td>4/23/2020</td>
+      <td>0</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Bingham, Idaho</td>
+      <td>4/24/2020</td>
+      <td>0</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Bingham, Idaho</td>
+      <td>4/25/2020</td>
+      <td>0</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Bingham, Idaho</td>
+      <td>4/26/2020</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Bingham, Idaho</td>
+      <td>4/27/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Bingham, Idaho</td>
+      <td>4/28/2020</td>
+      <td>0</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Bingham, Idaho</td>
+      <td>4/29/2020</td>
+      <td>1</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Bingham, Idaho</td>
+      <td>4/30/2020</td>
+      <td>0</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Bingham, Idaho</td>
+      <td>5/1/2020</td>
+      <td>0</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Bingham, Idaho</td>
+      <td>5/2/2020</td>
+      <td>0</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Bingham, Idaho</td>
+      <td>5/3/2020</td>
+      <td>0</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Bingham, Idaho</td>
+      <td>5/4/2020</td>
+      <td>0</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Bingham, Idaho</td>
+      <td>5/5/2020</td>
+      <td>0</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Bingham, Idaho</td>
+      <td>5/6/2020</td>
+      <td>0</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Bingham, Idaho</td>
+      <td>5/7/2020</td>
+      <td>0</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Bingham, Idaho</td>
+      <td>5/8/2020</td>
+      <td>0</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Bingham, Idaho</td>
+      <td>5/9/2020</td>
+      <td>0</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Bingham, Idaho</td>
+      <td>5/10/2020</td>
+      <td>0</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Bingham, Idaho</td>
+      <td>5/13/2020</td>
+      <td>2</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Bingham, Idaho</td>
+      <td>5/14/2020</td>
+      <td>0</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Bingham, Idaho</td>
+      <td>5/15/2020</td>
+      <td>0</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Bingham, Idaho</td>
+      <td>5/16/2020</td>
+      <td>0</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Bingham, Idaho</td>
+      <td>5/17/2020</td>
+      <td>0</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Bingham, Idaho</td>
+      <td>5/18/2020</td>
+      <td>0</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Bingham, Idaho</td>
+      <td>5/19/2020</td>
+      <td>0</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Bingham, Idaho</td>
+      <td>5/20/2020</td>
+      <td>0</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Bingham, Idaho</td>
+      <td>5/21/2020</td>
+      <td>0</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Bingham, Idaho</td>
+      <td>5/22/2020</td>
+      <td>0</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Bingham, Idaho</td>
+      <td>5/23/2020</td>
+      <td>0</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Bingham, Idaho</td>
+      <td>5/24/2020</td>
+      <td>0</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Bingham, Idaho</td>
+      <td>5/25/2020</td>
+      <td>0</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Bingham, Idaho</td>
+      <td>5/26/2020</td>
+      <td>0</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Bingham, Idaho</td>
+      <td>5/27/2020</td>
+      <td>0</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Bingham, Idaho</td>
+      <td>5/28/2020</td>
+      <td>0</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Bingham, Idaho</td>
+      <td>5/29/2020</td>
+      <td>0</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Bingham, Idaho</td>
+      <td>5/30/2020</td>
+      <td>0</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Bingham, Idaho</td>
+      <td>5/31/2020</td>
+      <td>1</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Bingham, Idaho</td>
+      <td>6/1/2020</td>
+      <td>1</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Bingham, Idaho</td>
+      <td>6/2/2020</td>
+      <td>0</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Bingham, Idaho</td>
+      <td>6/3/2020</td>
+      <td>3</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Bingham, Idaho</td>
+      <td>6/4/2020</td>
+      <td>1</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Bingham, Idaho</td>
+      <td>6/5/2020</td>
+      <td>8</td>
+      <td>1.62</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Bingham, Idaho</td>
+      <td>6/6/2020</td>
+      <td>0</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>Bingham, Idaho</td>
+      <td>6/7/2020</td>
+      <td>3</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Bingham, Idaho</td>
+      <td>6/8/2020</td>
+      <td>0</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>Bingham, Idaho</td>
+      <td>6/9/2020</td>
+      <td>0</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>Bingham, Idaho</td>
+      <td>6/10/2020</td>
+      <td>0</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>Bingham, Idaho</td>
+      <td>6/11/2020</td>
+      <td>0</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>Bingham, Idaho</td>
+      <td>6/12/2020</td>
+      <td>0</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>Bingham, Idaho</td>
+      <td>6/13/2020</td>
+      <td>1</td>
+      <td>1.67</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>Bingham, Idaho</td>
+      <td>6/14/2020</td>
+      <td>2</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>Bingham, Idaho</td>
+      <td>6/15/2020</td>
+      <td>0</td>
+      <td>1.59</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>Bingham, Idaho</td>
+      <td>6/16/2020</td>
+      <td>0</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>Bingham, Idaho</td>
+      <td>6/17/2020</td>
+      <td>0</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>Bingham, Idaho</td>
+      <td>6/18/2020</td>
+      <td>1</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>Bingham, Idaho</td>
+      <td>6/19/2020</td>
+      <td>0</td>
+      <td>2.24</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>Bingham, Idaho</td>
+      <td>6/20/2020</td>
+      <td>3</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>Bingham, Idaho</td>
+      <td>6/21/2020</td>
+      <td>0</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>Bingham, Idaho</td>
+      <td>6/22/2020</td>
+      <td>2</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>Bingham, Idaho</td>
+      <td>6/23/2020</td>
+      <td>0</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>Bingham, Idaho</td>
+      <td>6/24/2020</td>
+      <td>1</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>Bingham, Idaho</td>
+      <td>6/25/2020</td>
+      <td>0</td>
+      <td>1.86</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>Bingham, Idaho</td>
+      <td>6/26/2020</td>
+      <td>0</td>
+      <td>2.58</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>Bingham, Idaho</td>
+      <td>6/27/2020</td>
+      <td>3</td>
+      <td>2.27</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>Bingham, Idaho</td>
+      <td>6/28/2020</td>
+      <td>4</td>
+      <td>1.27</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>Bingham, Idaho</td>
+      <td>6/29/2020</td>
+      <td>0</td>
+      <td>1.59</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>Bingham, Idaho</td>
+      <td>6/30/2020</td>
+      <td>0</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>Bingham, Idaho</td>
+      <td>7/1/2020</td>
+      <td>3</td>
+      <td>1.86</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>Bingham, Idaho</td>
+      <td>7/2/2020</td>
+      <td>18</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>Bingham, Idaho</td>
+      <td>7/3/2020</td>
+      <td>1</td>
+      <td>2.38</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>Bingham, Idaho</td>
+      <td>7/4/2020</td>
+      <td>0</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>Bingham, Idaho</td>
+      <td>7/5/2020</td>
+      <td>0</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>Bingham, Idaho</td>
+      <td>7/6/2020</td>
+      <td>9</td>
+      <td>1.87</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>Bingham, Idaho</td>
+      <td>7/7/2020</td>
+      <td>0</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>Bingham, Idaho</td>
+      <td>7/8/2020</td>
+      <td>0</td>
+      <td>1.76</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>Bingham, Idaho</td>
+      <td>7/9/2020</td>
+      <td>21</td>
+      <td>2.30</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>Bingham, Idaho</td>
+      <td>7/10/2020</td>
+      <td>2</td>
+      <td>2.46</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>Bingham, Idaho</td>
+      <td>7/11/2020</td>
+      <td>0</td>
+      <td>2.45</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>Bingham, Idaho</td>
+      <td>7/12/2020</td>
+      <td>0</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>Bingham, Idaho</td>
+      <td>7/13/2020</td>
+      <td>11</td>
+      <td>1.83</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>Bingham, Idaho</td>
+      <td>7/14/2020</td>
+      <td>6</td>
+      <td>1.68</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>Bingham, Idaho</td>
+      <td>7/15/2020</td>
+      <td>3</td>
+      <td>1.82</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>Bingham, Idaho</td>
+      <td>7/16/2020</td>
+      <td>5</td>
+      <td>2.27</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>Bingham, Idaho</td>
+      <td>7/17/2020</td>
+      <td>3</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>Bingham, Idaho</td>
+      <td>7/18/2020</td>
+      <td>0</td>
+      <td>2.16</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>Bingham, Idaho</td>
+      <td>7/19/2020</td>
+      <td>0</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>Bingham, Idaho</td>
+      <td>7/20/2020</td>
+      <td>14</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>Bingham, Idaho</td>
+      <td>7/21/2020</td>
+      <td>5</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>Bingham, Idaho</td>
+      <td>7/22/2020</td>
+      <td>4</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>Bingham, Idaho</td>
+      <td>7/23/2020</td>
+      <td>4</td>
+      <td>3.43</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>Bingham, Idaho</td>
+      <td>7/24/2020</td>
+      <td>11</td>
+      <td>2.68</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>Bingham, Idaho</td>
+      <td>7/25/2020</td>
+      <td>0</td>
+      <td>2.37</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>Bingham, Idaho</td>
+      <td>7/26/2020</td>
+      <td>0</td>
+      <td>3.64</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>Bingham, Idaho</td>
+      <td>7/27/2020</td>
+      <td>12</td>
+      <td>1.84</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>Bingham, Idaho</td>
+      <td>7/28/2020</td>
+      <td>12</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>Bingham, Idaho</td>
+      <td>7/29/2020</td>
+      <td>14</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>Bingham, Idaho</td>
+      <td>7/30/2020</td>
+      <td>13</td>
+      <td>2.13</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>Bingham, Idaho</td>
+      <td>7/31/2020</td>
+      <td>9</td>
+      <td>2.52</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>Bingham, Idaho</td>
+      <td>8/1/2020</td>
+      <td>0</td>
+      <td>2.34</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>Bingham, Idaho</td>
+      <td>8/2/2020</td>
+      <td>0</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>Bingham, Idaho</td>
+      <td>8/3/2020</td>
+      <td>17</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>Bingham, Idaho</td>
+      <td>8/4/2020</td>
+      <td>17</td>
+      <td>1.83</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>Bingham, Idaho</td>
+      <td>8/5/2020</td>
+      <td>9</td>
+      <td>2.01</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>Bingham, Idaho</td>
+      <td>8/6/2020</td>
+      <td>11</td>
+      <td>2.15</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>Bingham, Idaho</td>
+      <td>8/7/2020</td>
+      <td>4</td>
+      <td>2.44</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>Bingham, Idaho</td>
+      <td>8/8/2020</td>
+      <td>0</td>
+      <td>2.30</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>Bingham, Idaho</td>
+      <td>8/9/2020</td>
+      <td>0</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>Bingham, Idaho</td>
+      <td>8/10/2020</td>
+      <td>12</td>
+      <td>1.83</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>Bingham, Idaho</td>
+      <td>8/11/2020</td>
+      <td>22</td>
+      <td>1.97</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>Bingham, Idaho</td>
+      <td>8/12/2020</td>
+      <td>15</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>Bingham, Idaho</td>
+      <td>8/13/2020</td>
+      <td>16</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>Bingham, Idaho</td>
+      <td>8/14/2020</td>
+      <td>16</td>
+      <td>2.62</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>Bingham, Idaho</td>
+      <td>8/15/2020</td>
+      <td>0</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>Bingham, Idaho</td>
+      <td>8/16/2020</td>
+      <td>0</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>Bingham, Idaho</td>
+      <td>8/17/2020</td>
+      <td>6</td>
+      <td>1.81</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>Bingham, Idaho</td>
+      <td>8/18/2020</td>
+      <td>18</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>Bingham, Idaho</td>
+      <td>8/19/2020</td>
+      <td>11</td>
+      <td>1.63</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>Bingham, Idaho</td>
+      <td>8/20/2020</td>
+      <td>9</td>
+      <td>1.95</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>Bingham, Idaho</td>
+      <td>8/21/2020</td>
+      <td>7</td>
+      <td>2.37</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>Bingham, Idaho</td>
+      <td>8/22/2020</td>
+      <td>0</td>
+      <td>2.24</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>Bingham, Idaho</td>
+      <td>8/23/2020</td>
+      <td>0</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>Bingham, Idaho</td>
+      <td>8/24/2020</td>
+      <td>7</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>Bingham, Idaho</td>
+      <td>8/25/2020</td>
+      <td>7</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>Bingham, Idaho</td>
+      <td>8/26/2020</td>
+      <td>15</td>
+      <td>1.68</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>Bingham, Idaho</td>
+      <td>8/27/2020</td>
+      <td>20</td>
+      <td>1.95</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>Bingham, Idaho</td>
+      <td>8/28/2020</td>
+      <td>11</td>
+      <td>2.43</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>Bingham, Idaho</td>
+      <td>8/29/2020</td>
+      <td>0</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>Bingham, Idaho</td>
+      <td>8/30/2020</td>
+      <td>0</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>Bingham, Idaho</td>
+      <td>8/31/2020</td>
+      <td>1</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>Bingham, Idaho</td>
+      <td>9/1/2020</td>
+      <td>34</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>Bingham, Idaho</td>
+      <td>9/2/2020</td>
+      <td>79</td>
+      <td>1.44</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>Bingham, Idaho</td>
+      <td>9/3/2020</td>
+      <td>32</td>
+      <td>2.06</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>Bingham, Idaho</td>
+      <td>9/4/2020</td>
+      <td>11</td>
+      <td>6.52</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>Bingham, Idaho</td>
+      <td>9/5/2020</td>
+      <td>14</td>
+      <td>2.51</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>Bingham, Idaho</td>
+      <td>9/6/2020</td>
+      <td>0</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>Bingham, Idaho</td>
+      <td>9/7/2020</td>
+      <td>0</td>
+      <td>4.19</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>Bingham, Idaho</td>
+      <td>9/8/2020</td>
+      <td>35</td>
+      <td>1.94</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>Madison, Arkansas</td>
+      <td>4/8/2020</td>
+      <td>1</td>
+      <td>-0.06</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>Madison, Arkansas</td>
+      <td>4/9/2020</td>
+      <td>0</td>
+      <td>-0.25</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>Madison, Arkansas</td>
+      <td>4/10/2020</td>
+      <td>0</td>
+      <td>-0.09</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>Madison, Arkansas</td>
+      <td>4/11/2020</td>
+      <td>0</td>
+      <td>-0.10</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>Madison, Arkansas</td>
+      <td>4/12/2020</td>
+      <td>0</td>
+      <td>-0.40</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>Madison, Arkansas</td>
+      <td>4/13/2020</td>
+      <td>0</td>
+      <td>-0.40</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>Madison, Arkansas</td>
+      <td>4/14/2020</td>
+      <td>0</td>
+      <td>-0.22</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>Madison, Arkansas</td>
+      <td>4/15/2020</td>
+      <td>0</td>
+      <td>-0.03</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>Madison, Arkansas</td>
+      <td>4/16/2020</td>
+      <td>0</td>
+      <td>-0.17</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>Madison, Arkansas</td>
+      <td>4/17/2020</td>
+      <td>0</td>
+      <td>-0.12</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>Madison, Arkansas</td>
+      <td>4/18/2020</td>
+      <td>0</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>Madison, Arkansas</td>
+      <td>4/19/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>Madison, Arkansas</td>
+      <td>4/20/2020</td>
+      <td>0</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>Madison, Arkansas</td>
+      <td>4/21/2020</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>Madison, Arkansas</td>
+      <td>4/22/2020</td>
+      <td>0</td>
+      <td>-0.29</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>Madison, Arkansas</td>
+      <td>4/23/2020</td>
+      <td>0</td>
+      <td>-0.08</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>Madison, Arkansas</td>
+      <td>4/24/2020</td>
+      <td>0</td>
+      <td>-0.05</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>Madison, Arkansas</td>
+      <td>4/25/2020</td>
+      <td>0</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>Madison, Arkansas</td>
+      <td>4/26/2020</td>
+      <td>0</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>Madison, Arkansas</td>
+      <td>4/27/2020</td>
+      <td>0</td>
+      <td>-0.13</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>Madison, Arkansas</td>
+      <td>4/28/2020</td>
+      <td>0</td>
+      <td>-0.05</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>Madison, Arkansas</td>
+      <td>4/29/2020</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>Madison, Arkansas</td>
+      <td>4/30/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>Madison, Arkansas</td>
+      <td>5/1/2020</td>
+      <td>0</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>Madison, Arkansas</td>
+      <td>5/2/2020</td>
+      <td>0</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>Madison, Arkansas</td>
+      <td>5/3/2020</td>
+      <td>0</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>Madison, Arkansas</td>
+      <td>5/4/2020</td>
+      <td>0</td>
+      <td>-0.10</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>Madison, Arkansas</td>
+      <td>5/5/2020</td>
+      <td>0</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>Madison, Arkansas</td>
+      <td>5/6/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>Madison, Arkansas</td>
+      <td>5/7/2020</td>
+      <td>0</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>201</th>
+      <td>Madison, Arkansas</td>
+      <td>5/8/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>Madison, Arkansas</td>
+      <td>5/9/2020</td>
+      <td>0</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>Madison, Arkansas</td>
+      <td>5/10/2020</td>
+      <td>0</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>Madison, Arkansas</td>
+      <td>5/13/2020</td>
+      <td>0</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>Madison, Arkansas</td>
+      <td>5/14/2020</td>
+      <td>0</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>Madison, Arkansas</td>
+      <td>5/15/2020</td>
+      <td>0</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>Madison, Arkansas</td>
+      <td>5/16/2020</td>
+      <td>0</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>Madison, Arkansas</td>
+      <td>5/17/2020</td>
+      <td>0</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>Madison, Arkansas</td>
+      <td>5/18/2020</td>
+      <td>0</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>Madison, Arkansas</td>
+      <td>5/19/2020</td>
+      <td>1</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td>Madison, Arkansas</td>
+      <td>5/20/2020</td>
+      <td>0</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>Madison, Arkansas</td>
+      <td>5/21/2020</td>
+      <td>0</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td>Madison, Arkansas</td>
+      <td>5/22/2020</td>
+      <td>1</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>Madison, Arkansas</td>
+      <td>5/23/2020</td>
+      <td>0</td>
+      <td>1.67</td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td>Madison, Arkansas</td>
+      <td>5/24/2020</td>
+      <td>0</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>Madison, Arkansas</td>
+      <td>5/25/2020</td>
+      <td>2</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td>Madison, Arkansas</td>
+      <td>5/26/2020</td>
+      <td>1</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>Madison, Arkansas</td>
+      <td>5/27/2020</td>
+      <td>0</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td>Madison, Arkansas</td>
+      <td>5/28/2020</td>
+      <td>0</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>Madison, Arkansas</td>
+      <td>5/29/2020</td>
+      <td>7</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>Madison, Arkansas</td>
+      <td>5/30/2020</td>
+      <td>9</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <th>222</th>
+      <td>Madison, Arkansas</td>
+      <td>5/31/2020</td>
+      <td>1</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>Madison, Arkansas</td>
+      <td>6/1/2020</td>
+      <td>0</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>224</th>
+      <td>Madison, Arkansas</td>
+      <td>6/2/2020</td>
+      <td>6</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>Madison, Arkansas</td>
+      <td>6/3/2020</td>
+      <td>1</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <th>226</th>
+      <td>Madison, Arkansas</td>
+      <td>6/4/2020</td>
+      <td>4</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>227</th>
+      <td>Madison, Arkansas</td>
+      <td>6/5/2020</td>
+      <td>9</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <th>228</th>
+      <td>Madison, Arkansas</td>
+      <td>6/6/2020</td>
+      <td>7</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>229</th>
+      <td>Madison, Arkansas</td>
+      <td>6/7/2020</td>
+      <td>4</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <th>230</th>
+      <td>Madison, Arkansas</td>
+      <td>6/8/2020</td>
+      <td>0</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <th>231</th>
+      <td>Madison, Arkansas</td>
+      <td>6/9/2020</td>
+      <td>3</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <th>232</th>
+      <td>Madison, Arkansas</td>
+      <td>6/10/2020</td>
+      <td>1</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>233</th>
+      <td>Madison, Arkansas</td>
+      <td>6/11/2020</td>
+      <td>9</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>234</th>
+      <td>Madison, Arkansas</td>
+      <td>6/12/2020</td>
+      <td>32</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <th>235</th>
+      <td>Madison, Arkansas</td>
+      <td>6/13/2020</td>
+      <td>8</td>
+      <td>1.65</td>
+    </tr>
+    <tr>
+      <th>236</th>
+      <td>Madison, Arkansas</td>
+      <td>6/14/2020</td>
+      <td>4</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <th>237</th>
+      <td>Madison, Arkansas</td>
+      <td>6/15/2020</td>
+      <td>8</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>238</th>
+      <td>Madison, Arkansas</td>
+      <td>6/16/2020</td>
+      <td>3</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>239</th>
+      <td>Madison, Arkansas</td>
+      <td>6/17/2020</td>
+      <td>6</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>240</th>
+      <td>Madison, Arkansas</td>
+      <td>6/18/2020</td>
+      <td>0</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>241</th>
+      <td>Madison, Arkansas</td>
+      <td>6/19/2020</td>
+      <td>9</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <th>242</th>
+      <td>Madison, Arkansas</td>
+      <td>6/20/2020</td>
+      <td>5</td>
+      <td>1.26</td>
+    </tr>
+    <tr>
+      <th>243</th>
+      <td>Madison, Arkansas</td>
+      <td>6/21/2020</td>
+      <td>4</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>Madison, Arkansas</td>
+      <td>6/22/2020</td>
+      <td>8</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>245</th>
+      <td>Madison, Arkansas</td>
+      <td>6/23/2020</td>
+      <td>8</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>246</th>
+      <td>Madison, Arkansas</td>
+      <td>6/24/2020</td>
+      <td>1</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <th>247</th>
+      <td>Madison, Arkansas</td>
+      <td>6/25/2020</td>
+      <td>5</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>248</th>
+      <td>Madison, Arkansas</td>
+      <td>6/26/2020</td>
+      <td>6</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <th>249</th>
+      <td>Madison, Arkansas</td>
+      <td>6/27/2020</td>
+      <td>1</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <th>250</th>
+      <td>Madison, Arkansas</td>
+      <td>6/28/2020</td>
+      <td>13</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <th>251</th>
+      <td>Madison, Arkansas</td>
+      <td>6/29/2020</td>
+      <td>2</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <th>252</th>
+      <td>Madison, Arkansas</td>
+      <td>6/30/2020</td>
+      <td>2</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>253</th>
+      <td>Madison, Arkansas</td>
+      <td>7/1/2020</td>
+      <td>2</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>254</th>
+      <td>Madison, Arkansas</td>
+      <td>7/2/2020</td>
+      <td>3</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>255</th>
+      <td>Madison, Arkansas</td>
+      <td>7/3/2020</td>
+      <td>1</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <th>256</th>
+      <td>Madison, Arkansas</td>
+      <td>7/4/2020</td>
+      <td>2</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>257</th>
+      <td>Madison, Arkansas</td>
+      <td>7/5/2020</td>
+      <td>6</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <th>258</th>
+      <td>Madison, Arkansas</td>
+      <td>7/6/2020</td>
+      <td>0</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>259</th>
+      <td>Madison, Arkansas</td>
+      <td>7/7/2020</td>
+      <td>5</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>260</th>
+      <td>Madison, Arkansas</td>
+      <td>7/8/2020</td>
+      <td>3</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>261</th>
+      <td>Madison, Arkansas</td>
+      <td>7/9/2020</td>
+      <td>0</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <th>262</th>
+      <td>Madison, Arkansas</td>
+      <td>7/10/2020</td>
+      <td>1</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <th>263</th>
+      <td>Madison, Arkansas</td>
+      <td>7/11/2020</td>
+      <td>7</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>264</th>
+      <td>Madison, Arkansas</td>
+      <td>7/12/2020</td>
+      <td>1</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <th>265</th>
+      <td>Madison, Arkansas</td>
+      <td>7/13/2020</td>
+      <td>0</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>266</th>
+      <td>Madison, Arkansas</td>
+      <td>7/14/2020</td>
+      <td>1</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>267</th>
+      <td>Madison, Arkansas</td>
+      <td>7/15/2020</td>
+      <td>0</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>268</th>
+      <td>Madison, Arkansas</td>
+      <td>7/16/2020</td>
+      <td>2</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>269</th>
+      <td>Madison, Arkansas</td>
+      <td>7/17/2020</td>
+      <td>0</td>
+      <td>1.44</td>
+    </tr>
+    <tr>
+      <th>270</th>
+      <td>Madison, Arkansas</td>
+      <td>7/18/2020</td>
+      <td>1</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>271</th>
+      <td>Madison, Arkansas</td>
+      <td>7/19/2020</td>
+      <td>2</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>272</th>
+      <td>Madison, Arkansas</td>
+      <td>7/20/2020</td>
+      <td>2</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>273</th>
+      <td>Madison, Arkansas</td>
+      <td>7/21/2020</td>
+      <td>5</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>274</th>
+      <td>Madison, Arkansas</td>
+      <td>7/22/2020</td>
+      <td>2</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <th>275</th>
+      <td>Madison, Arkansas</td>
+      <td>7/23/2020</td>
+      <td>0</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <th>276</th>
+      <td>Madison, Arkansas</td>
+      <td>7/24/2020</td>
+      <td>4</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>277</th>
+      <td>Madison, Arkansas</td>
+      <td>7/25/2020</td>
+      <td>3</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <th>278</th>
+      <td>Madison, Arkansas</td>
+      <td>7/26/2020</td>
+      <td>0</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <th>279</th>
+      <td>Madison, Arkansas</td>
+      <td>7/27/2020</td>
+      <td>1</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>280</th>
+      <td>Madison, Arkansas</td>
+      <td>7/28/2020</td>
+      <td>0</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <th>281</th>
+      <td>Madison, Arkansas</td>
+      <td>7/29/2020</td>
+      <td>0</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>282</th>
+      <td>Madison, Arkansas</td>
+      <td>7/30/2020</td>
+      <td>7</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>283</th>
+      <td>Madison, Arkansas</td>
+      <td>7/31/2020</td>
+      <td>0</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>284</th>
+      <td>Madison, Arkansas</td>
+      <td>8/1/2020</td>
+      <td>1</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <th>285</th>
+      <td>Madison, Arkansas</td>
+      <td>8/2/2020</td>
+      <td>5</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <th>286</th>
+      <td>Madison, Arkansas</td>
+      <td>8/3/2020</td>
+      <td>3</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <th>287</th>
+      <td>Madison, Arkansas</td>
+      <td>8/4/2020</td>
+      <td>3</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>288</th>
+      <td>Madison, Arkansas</td>
+      <td>8/5/2020</td>
+      <td>2</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>289</th>
+      <td>Madison, Arkansas</td>
+      <td>8/6/2020</td>
+      <td>2</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>290</th>
+      <td>Madison, Arkansas</td>
+      <td>8/7/2020</td>
+      <td>0</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <th>291</th>
+      <td>Madison, Arkansas</td>
+      <td>8/8/2020</td>
+      <td>1</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <th>292</th>
+      <td>Madison, Arkansas</td>
+      <td>8/9/2020</td>
+      <td>0</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <th>293</th>
+      <td>Madison, Arkansas</td>
+      <td>8/10/2020</td>
+      <td>0</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <th>294</th>
+      <td>Madison, Arkansas</td>
+      <td>8/11/2020</td>
+      <td>0</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <th>295</th>
+      <td>Madison, Arkansas</td>
+      <td>8/12/2020</td>
+      <td>1</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>296</th>
+      <td>Madison, Arkansas</td>
+      <td>8/13/2020</td>
+      <td>4</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>297</th>
+      <td>Madison, Arkansas</td>
+      <td>8/14/2020</td>
+      <td>2</td>
+      <td>1.39</td>
+    </tr>
+    <tr>
+      <th>298</th>
+      <td>Madison, Arkansas</td>
+      <td>8/15/2020</td>
+      <td>0</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <th>299</th>
+      <td>Madison, Arkansas</td>
+      <td>8/16/2020</td>
+      <td>1</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <th>300</th>
+      <td>Madison, Arkansas</td>
+      <td>8/17/2020</td>
+      <td>1</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>301</th>
+      <td>Madison, Arkansas</td>
+      <td>8/18/2020</td>
+      <td>1</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>302</th>
+      <td>Madison, Arkansas</td>
+      <td>8/19/2020</td>
+      <td>4</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>303</th>
+      <td>Madison, Arkansas</td>
+      <td>8/20/2020</td>
+      <td>2</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <th>304</th>
+      <td>Madison, Arkansas</td>
+      <td>8/21/2020</td>
+      <td>0</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>305</th>
+      <td>Madison, Arkansas</td>
+      <td>8/22/2020</td>
+      <td>0</td>
+      <td>1.37</td>
+    </tr>
+    <tr>
+      <th>306</th>
+      <td>Madison, Arkansas</td>
+      <td>8/23/2020</td>
+      <td>0</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <th>307</th>
+      <td>Madison, Arkansas</td>
+      <td>8/24/2020</td>
+      <td>0</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>308</th>
+      <td>Madison, Arkansas</td>
+      <td>8/25/2020</td>
+      <td>1</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>309</th>
+      <td>Madison, Arkansas</td>
+      <td>8/26/2020</td>
+      <td>0</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <th>310</th>
+      <td>Madison, Arkansas</td>
+      <td>8/27/2020</td>
+      <td>0</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>311</th>
+      <td>Madison, Arkansas</td>
+      <td>8/28/2020</td>
+      <td>3</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <th>312</th>
+      <td>Madison, Arkansas</td>
+      <td>8/29/2020</td>
+      <td>5</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>313</th>
+      <td>Madison, Arkansas</td>
+      <td>8/30/2020</td>
+      <td>0</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>314</th>
+      <td>Madison, Arkansas</td>
+      <td>8/31/2020</td>
+      <td>1</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>315</th>
+      <td>Madison, Arkansas</td>
+      <td>9/1/2020</td>
+      <td>0</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <th>316</th>
+      <td>Madison, Arkansas</td>
+      <td>9/2/2020</td>
+      <td>3</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>317</th>
+      <td>Madison, Arkansas</td>
+      <td>9/3/2020</td>
+      <td>3</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>318</th>
+      <td>Madison, Arkansas</td>
+      <td>9/4/2020</td>
+      <td>6</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <th>319</th>
+      <td>Madison, Arkansas</td>
+      <td>9/5/2020</td>
+      <td>0</td>
+      <td>1.97</td>
+    </tr>
+    <tr>
+      <th>320</th>
+      <td>Madison, Arkansas</td>
+      <td>9/6/2020</td>
+      <td>0</td>
+      <td>1.77</td>
+    </tr>
+    <tr>
+      <th>321</th>
+      <td>Madison, Arkansas</td>
+      <td>9/7/2020</td>
+      <td>2</td>
+      <td>1.67</td>
+    </tr>
+    <tr>
+      <th>322</th>
+      <td>Madison, Arkansas</td>
+      <td>9/8/2020</td>
+      <td>0</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>323</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/19/2020</td>
+      <td>1</td>
+      <td>-0.20</td>
+    </tr>
+    <tr>
+      <th>324</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/20/2020</td>
+      <td>0</td>
+      <td>-0.14</td>
+    </tr>
+    <tr>
+      <th>325</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/21/2020</td>
+      <td>0</td>
+      <td>-0.30</td>
+    </tr>
+    <tr>
+      <th>326</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/22/2020</td>
+      <td>0</td>
+      <td>-0.51</td>
+    </tr>
+    <tr>
+      <th>327</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/23/2020</td>
+      <td>0</td>
+      <td>-0.30</td>
+    </tr>
+    <tr>
+      <th>328</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/24/2020</td>
+      <td>0</td>
+      <td>-0.27</td>
+    </tr>
+    <tr>
+      <th>329</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/25/2020</td>
+      <td>0</td>
+      <td>-0.22</td>
+    </tr>
+    <tr>
+      <th>330</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/26/2020</td>
+      <td>2</td>
+      <td>-0.20</td>
+    </tr>
+    <tr>
+      <th>331</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/27/2020</td>
+      <td>0</td>
+      <td>-0.18</td>
+    </tr>
+    <tr>
+      <th>332</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/28/2020</td>
+      <td>1</td>
+      <td>-0.28</td>
+    </tr>
+    <tr>
+      <th>333</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/29/2020</td>
+      <td>1</td>
+      <td>-0.44</td>
+    </tr>
+    <tr>
+      <th>334</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/30/2020</td>
+      <td>1</td>
+      <td>-0.29</td>
+    </tr>
+    <tr>
+      <th>335</th>
+      <td>Sebastian, Arkansas</td>
+      <td>3/31/2020</td>
+      <td>2</td>
+      <td>-0.26</td>
+    </tr>
+    <tr>
+      <th>336</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/1/2020</td>
+      <td>0</td>
+      <td>-0.23</td>
+    </tr>
+    <tr>
+      <th>337</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/2/2020</td>
+      <td>0</td>
+      <td>-0.18</td>
+    </tr>
+    <tr>
+      <th>338</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/3/2020</td>
+      <td>0</td>
+      <td>-0.21</td>
+    </tr>
+    <tr>
+      <th>339</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/4/2020</td>
+      <td>0</td>
+      <td>-0.36</td>
+    </tr>
+    <tr>
+      <th>340</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/5/2020</td>
+      <td>0</td>
+      <td>-0.46</td>
+    </tr>
+    <tr>
+      <th>341</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/6/2020</td>
+      <td>0</td>
+      <td>-0.27</td>
+    </tr>
+    <tr>
+      <th>342</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/7/2020</td>
+      <td>1</td>
+      <td>-0.25</td>
+    </tr>
+    <tr>
+      <th>343</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/8/2020</td>
+      <td>0</td>
+      <td>-0.19</td>
+    </tr>
+    <tr>
+      <th>344</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/9/2020</td>
+      <td>0</td>
+      <td>-0.15</td>
+    </tr>
+    <tr>
+      <th>345</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/10/2020</td>
+      <td>0</td>
+      <td>-0.12</td>
+    </tr>
+    <tr>
+      <th>346</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/11/2020</td>
+      <td>1</td>
+      <td>-0.31</td>
+    </tr>
+    <tr>
+      <th>347</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/12/2020</td>
+      <td>0</td>
+      <td>-0.53</td>
+    </tr>
+    <tr>
+      <th>348</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/13/2020</td>
+      <td>1</td>
+      <td>-0.24</td>
+    </tr>
+    <tr>
+      <th>349</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/14/2020</td>
+      <td>0</td>
+      <td>-0.20</td>
+    </tr>
+    <tr>
+      <th>350</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/15/2020</td>
+      <td>0</td>
+      <td>-0.12</td>
+    </tr>
+    <tr>
+      <th>351</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/16/2020</td>
+      <td>0</td>
+      <td>-0.10</td>
+    </tr>
+    <tr>
+      <th>352</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/17/2020</td>
+      <td>0</td>
+      <td>-0.03</td>
+    </tr>
+    <tr>
+      <th>353</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/18/2020</td>
+      <td>0</td>
+      <td>-0.14</td>
+    </tr>
+    <tr>
+      <th>354</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/19/2020</td>
+      <td>0</td>
+      <td>-0.41</td>
+    </tr>
+    <tr>
+      <th>355</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/20/2020</td>
+      <td>0</td>
+      <td>-0.06</td>
+    </tr>
+    <tr>
+      <th>356</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/21/2020</td>
+      <td>0</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>357</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/22/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>358</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/23/2020</td>
+      <td>1</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>359</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/24/2020</td>
+      <td>0</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>360</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/25/2020</td>
+      <td>0</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <th>361</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/26/2020</td>
+      <td>0</td>
+      <td>-0.30</td>
+    </tr>
+    <tr>
+      <th>362</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/27/2020</td>
+      <td>0</td>
+      <td>-0.06</td>
+    </tr>
+    <tr>
+      <th>363</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/28/2020</td>
+      <td>0</td>
+      <td>-0.10</td>
+    </tr>
+    <tr>
+      <th>364</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/29/2020</td>
+      <td>1</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>365</th>
+      <td>Sebastian, Arkansas</td>
+      <td>4/30/2020</td>
+      <td>0</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>366</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/1/2020</td>
+      <td>0</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>367</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/2/2020</td>
+      <td>0</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>368</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/3/2020</td>
+      <td>0</td>
+      <td>-0.19</td>
+    </tr>
+    <tr>
+      <th>369</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/4/2020</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>370</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/5/2020</td>
+      <td>0</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>371</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/6/2020</td>
+      <td>1</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <th>372</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/7/2020</td>
+      <td>0</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <th>373</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/8/2020</td>
+      <td>0</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>374</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/9/2020</td>
+      <td>0</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>375</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/10/2020</td>
+      <td>1</td>
+      <td>-0.19</td>
+    </tr>
+    <tr>
+      <th>376</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/13/2020</td>
+      <td>0</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>377</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/14/2020</td>
+      <td>0</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>378</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/15/2020</td>
+      <td>0</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <th>379</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/16/2020</td>
+      <td>0</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>380</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/17/2020</td>
+      <td>1</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>381</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/18/2020</td>
+      <td>0</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <th>382</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/19/2020</td>
+      <td>1</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <th>383</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/20/2020</td>
+      <td>1</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <th>384</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/21/2020</td>
+      <td>0</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <th>385</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/22/2020</td>
+      <td>0</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>386</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/23/2020</td>
+      <td>1</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <th>387</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/24/2020</td>
+      <td>0</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>388</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/25/2020</td>
+      <td>1</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>389</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/26/2020</td>
+      <td>2</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>390</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/27/2020</td>
+      <td>1</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>391</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/28/2020</td>
+      <td>1</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <th>392</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/29/2020</td>
+      <td>5</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <th>393</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/30/2020</td>
+      <td>9</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>394</th>
+      <td>Sebastian, Arkansas</td>
+      <td>5/31/2020</td>
+      <td>2</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>395</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/1/2020</td>
+      <td>3</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <th>396</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/2/2020</td>
+      <td>4</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>397</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/3/2020</td>
+      <td>6</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <th>398</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/4/2020</td>
+      <td>9</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>399</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/5/2020</td>
+      <td>7</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <th>400</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/6/2020</td>
+      <td>12</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>401</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/7/2020</td>
+      <td>4</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>402</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/8/2020</td>
+      <td>11</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <th>403</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/9/2020</td>
+      <td>2</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <th>404</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/10/2020</td>
+      <td>4</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>405</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/11/2020</td>
+      <td>7</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>406</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/12/2020</td>
+      <td>24</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>407</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/13/2020</td>
+      <td>11</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>408</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/14/2020</td>
+      <td>4</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <th>409</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/15/2020</td>
+      <td>17</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>410</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/16/2020</td>
+      <td>4</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>411</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/17/2020</td>
+      <td>18</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <th>412</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/18/2020</td>
+      <td>6</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>413</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/19/2020</td>
+      <td>26</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <th>414</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/20/2020</td>
+      <td>7</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <th>415</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/21/2020</td>
+      <td>18</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>416</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/22/2020</td>
+      <td>6</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <th>417</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/23/2020</td>
+      <td>8</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>418</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/24/2020</td>
+      <td>40</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <th>419</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/25/2020</td>
+      <td>26</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <th>420</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/26/2020</td>
+      <td>33</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>421</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/27/2020</td>
+      <td>21</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>422</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/28/2020</td>
+      <td>57</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <th>423</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/29/2020</td>
+      <td>22</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>424</th>
+      <td>Sebastian, Arkansas</td>
+      <td>6/30/2020</td>
+      <td>11</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>425</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/1/2020</td>
+      <td>8</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>426</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/2/2020</td>
+      <td>57</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>427</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/3/2020</td>
+      <td>15</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>428</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/4/2020</td>
+      <td>29</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>429</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/5/2020</td>
+      <td>25</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>430</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/6/2020</td>
+      <td>20</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>431</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/7/2020</td>
+      <td>12</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>432</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/8/2020</td>
+      <td>15</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>433</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/9/2020</td>
+      <td>56</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>434</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/10/2020</td>
+      <td>42</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <th>435</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/11/2020</td>
+      <td>59</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>436</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/12/2020</td>
+      <td>28</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>437</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/13/2020</td>
+      <td>40</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <th>438</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/14/2020</td>
+      <td>55</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <th>439</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/15/2020</td>
+      <td>52</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <th>440</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/16/2020</td>
+      <td>44</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <th>441</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/17/2020</td>
+      <td>23</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <th>442</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/18/2020</td>
+      <td>54</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>443</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/19/2020</td>
+      <td>42</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <th>444</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/20/2020</td>
+      <td>22</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>445</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/21/2020</td>
+      <td>31</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <th>446</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/22/2020</td>
+      <td>17</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>447</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/23/2020</td>
+      <td>64</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>448</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/24/2020</td>
+      <td>40</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <th>449</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/25/2020</td>
+      <td>36</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>450</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/26/2020</td>
+      <td>48</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <th>451</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/27/2020</td>
+      <td>52</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>452</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/28/2020</td>
+      <td>45</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>453</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/29/2020</td>
+      <td>44</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>454</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/30/2020</td>
+      <td>58</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>455</th>
+      <td>Sebastian, Arkansas</td>
+      <td>7/31/2020</td>
+      <td>88</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>456</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/1/2020</td>
+      <td>35</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <th>457</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/2/2020</td>
+      <td>44</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>458</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/3/2020</td>
+      <td>88</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>459</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/4/2020</td>
+      <td>63</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>460</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/5/2020</td>
+      <td>58</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>461</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/6/2020</td>
+      <td>61</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <th>462</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/7/2020</td>
+      <td>41</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <th>463</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/8/2020</td>
+      <td>54</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <th>464</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/9/2020</td>
+      <td>43</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>465</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/10/2020</td>
+      <td>53</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <th>466</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/11/2020</td>
+      <td>21</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>467</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/12/2020</td>
+      <td>47</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>468</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/13/2020</td>
+      <td>47</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>469</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/14/2020</td>
+      <td>14</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>470</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/15/2020</td>
+      <td>43</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <th>471</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/16/2020</td>
+      <td>34</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>472</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/17/2020</td>
+      <td>21</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>473</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/18/2020</td>
+      <td>43</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>474</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/19/2020</td>
+      <td>53</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>475</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/20/2020</td>
+      <td>31</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <th>476</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/21/2020</td>
+      <td>39</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>477</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/22/2020</td>
+      <td>44</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>478</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/23/2020</td>
+      <td>13</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <th>479</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/24/2020</td>
+      <td>7</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>480</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/25/2020</td>
+      <td>36</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>481</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/26/2020</td>
+      <td>31</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>482</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/27/2020</td>
+      <td>37</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>483</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/28/2020</td>
+      <td>27</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>484</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/29/2020</td>
+      <td>25</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>485</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/30/2020</td>
+      <td>20</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>486</th>
+      <td>Sebastian, Arkansas</td>
+      <td>8/31/2020</td>
+      <td>15</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <th>487</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/1/2020</td>
+      <td>23</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>488</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/2/2020</td>
+      <td>10</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <th>489</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/3/2020</td>
+      <td>36</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>490</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/4/2020</td>
+      <td>21</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>491</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/5/2020</td>
+      <td>16</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>492</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/6/2020</td>
+      <td>38</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>493</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/7/2020</td>
+      <td>9</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>494</th>
+      <td>Sebastian, Arkansas</td>
+      <td>9/8/2020</td>
+      <td>12</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <th>495</th>
+      <td>Tehama, California</td>
+      <td>4/3/2020</td>
+      <td>1</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <th>496</th>
+      <td>Tehama, California</td>
+      <td>4/4/2020</td>
+      <td>0</td>
+      <td>-0.31</td>
+    </tr>
+    <tr>
+      <th>497</th>
+      <td>Tehama, California</td>
+      <td>4/5/2020</td>
+      <td>0</td>
+      <td>-0.38</td>
+    </tr>
+    <tr>
+      <th>498</th>
+      <td>Tehama, California</td>
+      <td>4/6/2020</td>
+      <td>0</td>
+      <td>-0.21</td>
+    </tr>
+    <tr>
+      <th>499</th>
+      <td>Tehama, California</td>
+      <td>4/7/2020</td>
+      <td>0</td>
+      <td>-0.19</td>
+    </tr>
+    <tr>
+      <th>500</th>
+      <td>Tehama, California</td>
+      <td>4/8/2020</td>
+      <td>0</td>
+      <td>-0.21</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>Tehama, California</td>
+      <td>4/9/2020</td>
+      <td>0</td>
+      <td>-0.20</td>
+    </tr>
+    <tr>
+      <th>502</th>
+      <td>Tehama, California</td>
+      <td>4/10/2020</td>
+      <td>0</td>
+      <td>-0.09</td>
+    </tr>
+    <tr>
+      <th>503</th>
+      <td>Tehama, California</td>
+      <td>4/11/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>504</th>
+      <td>Tehama, California</td>
+      <td>4/12/2020</td>
+      <td>0</td>
+      <td>-0.32</td>
+    </tr>
+    <tr>
+      <th>505</th>
+      <td>Tehama, California</td>
+      <td>4/13/2020</td>
+      <td>0</td>
+      <td>-0.15</td>
+    </tr>
+    <tr>
+      <th>506</th>
+      <td>Tehama, California</td>
+      <td>4/14/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>507</th>
+      <td>Tehama, California</td>
+      <td>4/15/2020</td>
+      <td>0</td>
+      <td>-0.13</td>
+    </tr>
+    <tr>
+      <th>508</th>
+      <td>Tehama, California</td>
+      <td>4/16/2020</td>
+      <td>0</td>
+      <td>-0.06</td>
+    </tr>
+    <tr>
+      <th>509</th>
+      <td>Tehama, California</td>
+      <td>4/17/2020</td>
+      <td>0</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>510</th>
+      <td>Tehama, California</td>
+      <td>4/18/2020</td>
+      <td>0</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>511</th>
+      <td>Tehama, California</td>
+      <td>4/19/2020</td>
+      <td>0</td>
+      <td>-0.16</td>
+    </tr>
+    <tr>
+      <th>512</th>
+      <td>Tehama, California</td>
+      <td>4/20/2020</td>
+      <td>0</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <th>513</th>
+      <td>Tehama, California</td>
+      <td>4/21/2020</td>
+      <td>0</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>514</th>
+      <td>Tehama, California</td>
+      <td>4/22/2020</td>
+      <td>0</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>515</th>
+      <td>Tehama, California</td>
+      <td>4/23/2020</td>
+      <td>0</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>516</th>
+      <td>Tehama, California</td>
+      <td>4/24/2020</td>
+      <td>0</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>517</th>
+      <td>Tehama, California</td>
+      <td>4/25/2020</td>
+      <td>0</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <th>518</th>
+      <td>Tehama, California</td>
+      <td>4/26/2020</td>
+      <td>0</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <th>519</th>
+      <td>Tehama, California</td>
+      <td>4/27/2020</td>
+      <td>0</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <th>520</th>
+      <td>Tehama, California</td>
+      <td>4/28/2020</td>
+      <td>0</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>521</th>
+      <td>Tehama, California</td>
+      <td>4/29/2020</td>
+      <td>0</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>522</th>
+      <td>Tehama, California</td>
+      <td>4/30/2020</td>
+      <td>0</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>523</th>
+      <td>Tehama, California</td>
+      <td>5/1/2020</td>
+      <td>0</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <th>524</th>
+      <td>Tehama, California</td>
+      <td>5/2/2020</td>
+      <td>0</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>525</th>
+      <td>Tehama, California</td>
+      <td>5/3/2020</td>
+      <td>0</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>526</th>
+      <td>Tehama, California</td>
+      <td>5/4/2020</td>
+      <td>0</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>527</th>
+      <td>Tehama, California</td>
+      <td>5/5/2020</td>
+      <td>0</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <th>528</th>
+      <td>Tehama, California</td>
+      <td>5/6/2020</td>
+      <td>0</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>529</th>
+      <td>Tehama, California</td>
+      <td>5/7/2020</td>
+      <td>0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <th>530</th>
+      <td>Tehama, California</td>
+      <td>5/8/2020</td>
+      <td>0</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <th>531</th>
+      <td>Tehama, California</td>
+      <td>5/9/2020</td>
+      <td>0</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>532</th>
+      <td>Tehama, California</td>
+      <td>5/10/2020</td>
+      <td>0</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <th>533</th>
+      <td>Tehama, California</td>
+      <td>5/13/2020</td>
+      <td>0</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>534</th>
+      <td>Tehama, California</td>
+      <td>5/14/2020</td>
+      <td>0</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>535</th>
+      <td>Tehama, California</td>
+      <td>5/15/2020</td>
+      <td>1</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>536</th>
+      <td>Tehama, California</td>
+      <td>5/16/2020</td>
+      <td>0</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>537</th>
+      <td>Tehama, California</td>
+      <td>5/17/2020</td>
+      <td>0</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <th>538</th>
+      <td>Tehama, California</td>
+      <td>5/18/2020</td>
+      <td>0</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>539</th>
+      <td>Tehama, California</td>
+      <td>5/19/2020</td>
+      <td>0</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <th>540</th>
+      <td>Tehama, California</td>
+      <td>5/20/2020</td>
+      <td>0</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <th>541</th>
+      <td>Tehama, California</td>
+      <td>5/21/2020</td>
+      <td>0</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>542</th>
+      <td>Tehama, California</td>
+      <td>5/22/2020</td>
+      <td>1</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <th>543</th>
+      <td>Tehama, California</td>
+      <td>5/23/2020</td>
+      <td>0</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <th>544</th>
+      <td>Tehama, California</td>
+      <td>5/24/2020</td>
+      <td>0</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <th>545</th>
+      <td>Tehama, California</td>
+      <td>5/25/2020</td>
+      <td>0</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>546</th>
+      <td>Tehama, California</td>
+      <td>5/26/2020</td>
+      <td>1</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <th>547</th>
+      <td>Tehama, California</td>
+      <td>5/27/2020</td>
+      <td>0</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <th>548</th>
+      <td>Tehama, California</td>
+      <td>5/28/2020</td>
+      <td>0</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>549</th>
+      <td>Tehama, California</td>
+      <td>5/29/2020</td>
+      <td>0</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>550</th>
+      <td>Tehama, California</td>
+      <td>5/30/2020</td>
+      <td>0</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <th>551</th>
+      <td>Tehama, California</td>
+      <td>5/31/2020</td>
+      <td>0</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>552</th>
+      <td>Tehama, California</td>
+      <td>6/1/2020</td>
+      <td>1</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <th>553</th>
+      <td>Tehama, California</td>
+      <td>6/2/2020</td>
+      <td>1</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <th>554</th>
+      <td>Tehama, California</td>
+      <td>6/3/2020</td>
+      <td>0</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <th>555</th>
+      <td>Tehama, California</td>
+      <td>6/4/2020</td>
+      <td>1</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>556</th>
+      <td>Tehama, California</td>
+      <td>6/5/2020</td>
+      <td>1</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>557</th>
+      <td>Tehama, California</td>
+      <td>6/6/2020</td>
+      <td>0</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>558</th>
+      <td>Tehama, California</td>
+      <td>6/7/2020</td>
+      <td>0</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>559</th>
+      <td>Tehama, California</td>
+      <td>6/8/2020</td>
+      <td>0</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <th>560</th>
+      <td>Tehama, California</td>
+      <td>6/9/2020</td>
+      <td>0</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>561</th>
+      <td>Tehama, California</td>
+      <td>6/10/2020</td>
+      <td>1</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>562</th>
+      <td>Tehama, California</td>
+      <td>6/11/2020</td>
+      <td>1</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <th>563</th>
+      <td>Tehama, California</td>
+      <td>6/12/2020</td>
+      <td>0</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <th>564</th>
+      <td>Tehama, California</td>
+      <td>6/13/2020</td>
+      <td>3</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <th>565</th>
+      <td>Tehama, California</td>
+      <td>6/14/2020</td>
+      <td>4</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>566</th>
+      <td>Tehama, California</td>
+      <td>6/15/2020</td>
+      <td>0</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>567</th>
+      <td>Tehama, California</td>
+      <td>6/16/2020</td>
+      <td>0</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <th>568</th>
+      <td>Tehama, California</td>
+      <td>6/17/2020</td>
+      <td>7</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <th>569</th>
+      <td>Tehama, California</td>
+      <td>6/18/2020</td>
+      <td>0</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <th>570</th>
+      <td>Tehama, California</td>
+      <td>6/19/2020</td>
+      <td>7</td>
+      <td>1.47</td>
+    </tr>
+    <tr>
+      <th>571</th>
+      <td>Tehama, California</td>
+      <td>6/20/2020</td>
+      <td>4</td>
+      <td>1.19</td>
+    </tr>
+    <tr>
+      <th>572</th>
+      <td>Tehama, California</td>
+      <td>6/21/2020</td>
+      <td>0</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <th>573</th>
+      <td>Tehama, California</td>
+      <td>6/22/2020</td>
+      <td>0</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>574</th>
+      <td>Tehama, California</td>
+      <td>6/23/2020</td>
+      <td>3</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th>575</th>
+      <td>Tehama, California</td>
+      <td>6/24/2020</td>
+      <td>12</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <th>576</th>
+      <td>Tehama, California</td>
+      <td>6/25/2020</td>
+      <td>5</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <th>577</th>
+      <td>Tehama, California</td>
+      <td>6/26/2020</td>
+      <td>4</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>578</th>
+      <td>Tehama, California</td>
+      <td>6/27/2020</td>
+      <td>4</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <th>579</th>
+      <td>Tehama, California</td>
+      <td>6/28/2020</td>
+      <td>0</td>
+      <td>1.19</td>
+    </tr>
+    <tr>
+      <th>580</th>
+      <td>Tehama, California</td>
+      <td>6/29/2020</td>
+      <td>0</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <th>581</th>
+      <td>Tehama, California</td>
+      <td>6/30/2020</td>
+      <td>0</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <th>582</th>
+      <td>Tehama, California</td>
+      <td>7/1/2020</td>
+      <td>12</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <th>583</th>
+      <td>Tehama, California</td>
+      <td>7/2/2020</td>
+      <td>5</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <th>584</th>
+      <td>Tehama, California</td>
+      <td>7/3/2020</td>
+      <td>6</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <th>585</th>
+      <td>Tehama, California</td>
+      <td>7/4/2020</td>
+      <td>3</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>586</th>
+      <td>Tehama, California</td>
+      <td>7/5/2020</td>
+      <td>3</td>
+      <td>1.65</td>
+    </tr>
+    <tr>
+      <th>587</th>
+      <td>Tehama, California</td>
+      <td>7/6/2020</td>
+      <td>3</td>
+      <td>1.44</td>
+    </tr>
+    <tr>
+      <th>588</th>
+      <td>Tehama, California</td>
+      <td>7/7/2020</td>
+      <td>0</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>589</th>
+      <td>Tehama, California</td>
+      <td>7/8/2020</td>
+      <td>0</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <th>590</th>
+      <td>Tehama, California</td>
+      <td>7/9/2020</td>
+      <td>5</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <th>591</th>
+      <td>Tehama, California</td>
+      <td>7/10/2020</td>
+      <td>2</td>
+      <td>1.58</td>
+    </tr>
+    <tr>
+      <th>592</th>
+      <td>Tehama, California</td>
+      <td>7/11/2020</td>
+      <td>5</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <th>593</th>
+      <td>Tehama, California</td>
+      <td>7/12/2020</td>
+      <td>4</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <th>594</th>
+      <td>Tehama, California</td>
+      <td>7/13/2020</td>
+      <td>0</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>595</th>
+      <td>Tehama, California</td>
+      <td>7/14/2020</td>
+      <td>1</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <th>596</th>
+      <td>Tehama, California</td>
+      <td>7/15/2020</td>
+      <td>11</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>597</th>
+      <td>Tehama, California</td>
+      <td>7/16/2020</td>
+      <td>3</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <th>598</th>
+      <td>Tehama, California</td>
+      <td>7/17/2020</td>
+      <td>0</td>
+      <td>1.55</td>
+    </tr>
+    <tr>
+      <th>599</th>
+      <td>Tehama, California</td>
+      <td>7/18/2020</td>
+      <td>2</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>600</th>
+      <td>Tehama, California</td>
+      <td>7/19/2020</td>
+      <td>8</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <th>601</th>
+      <td>Tehama, California</td>
+      <td>7/20/2020</td>
+      <td>2</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>602</th>
+      <td>Tehama, California</td>
+      <td>7/21/2020</td>
+      <td>8</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <th>603</th>
+      <td>Tehama, California</td>
+      <td>7/22/2020</td>
+      <td>4</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <th>604</th>
+      <td>Tehama, California</td>
+      <td>7/23/2020</td>
+      <td>5</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <th>605</th>
+      <td>Tehama, California</td>
+      <td>7/24/2020</td>
+      <td>3</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <th>606</th>
+      <td>Tehama, California</td>
+      <td>7/25/2020</td>
+      <td>12</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <th>607</th>
+      <td>Tehama, California</td>
+      <td>7/26/2020</td>
+      <td>0</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <th>608</th>
+      <td>Tehama, California</td>
+      <td>7/27/2020</td>
+      <td>5</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <th>609</th>
+      <td>Tehama, California</td>
+      <td>7/28/2020</td>
+      <td>17</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>610</th>
+      <td>Tehama, California</td>
+      <td>7/29/2020</td>
+      <td>7</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>611</th>
+      <td>Tehama, California</td>
+      <td>7/30/2020</td>
+      <td>7</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>612</th>
+      <td>Tehama, California</td>
+      <td>7/31/2020</td>
+      <td>2</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <th>613</th>
+      <td>Tehama, California</td>
+      <td>8/1/2020</td>
+      <td>5</td>
+      <td>1.54</td>
+    </tr>
+    <tr>
+      <th>614</th>
+      <td>Tehama, California</td>
+      <td>8/2/2020</td>
+      <td>7</td>
+      <td>1.26</td>
+    </tr>
+    <tr>
+      <th>615</th>
+      <td>Tehama, California</td>
+      <td>8/3/2020</td>
+      <td>2</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <th>616</th>
+      <td>Tehama, California</td>
+      <td>8/4/2020</td>
+      <td>3</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>617</th>
+      <td>Tehama, California</td>
+      <td>8/5/2020</td>
+      <td>1</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <th>618</th>
+      <td>Tehama, California</td>
+      <td>8/6/2020</td>
+      <td>5</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <th>619</th>
+      <td>Tehama, California</td>
+      <td>8/7/2020</td>
+      <td>0</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <th>620</th>
+      <td>Tehama, California</td>
+      <td>8/8/2020</td>
+      <td>15</td>
+      <td>1.69</td>
+    </tr>
+    <tr>
+      <th>621</th>
+      <td>Tehama, California</td>
+      <td>8/9/2020</td>
+      <td>5</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <th>622</th>
+      <td>Tehama, California</td>
+      <td>8/10/2020</td>
+      <td>14</td>
+      <td>1.19</td>
+    </tr>
+    <tr>
+      <th>623</th>
+      <td>Tehama, California</td>
+      <td>8/11/2020</td>
+      <td>17</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>624</th>
+      <td>Tehama, California</td>
+      <td>8/12/2020</td>
+      <td>7</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>625</th>
+      <td>Tehama, California</td>
+      <td>8/13/2020</td>
+      <td>0</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <th>626</th>
+      <td>Tehama, California</td>
+      <td>8/14/2020</td>
+      <td>13</td>
+      <td>1.44</td>
+    </tr>
+    <tr>
+      <th>627</th>
+      <td>Tehama, California</td>
+      <td>8/15/2020</td>
+      <td>3</td>
+      <td>1.36</td>
+    </tr>
+    <tr>
+      <th>628</th>
+      <td>Tehama, California</td>
+      <td>8/16/2020</td>
+      <td>7</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <th>629</th>
+      <td>Tehama, California</td>
+      <td>8/17/2020</td>
+      <td>6</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>630</th>
+      <td>Tehama, California</td>
+      <td>8/18/2020</td>
+      <td>6</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <th>631</th>
+      <td>Tehama, California</td>
+      <td>8/19/2020</td>
+      <td>0</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <th>632</th>
+      <td>Tehama, California</td>
+      <td>8/20/2020</td>
+      <td>18</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <th>633</th>
+      <td>Tehama, California</td>
+      <td>8/21/2020</td>
+      <td>8</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <th>634</th>
+      <td>Tehama, California</td>
+      <td>8/22/2020</td>
+      <td>7</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <th>635</th>
+      <td>Tehama, California</td>
+      <td>8/23/2020</td>
+      <td>11</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <th>636</th>
+      <td>Tehama, California</td>
+      <td>8/24/2020</td>
+      <td>13</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <th>637</th>
+      <td>Tehama, California</td>
+      <td>8/25/2020</td>
+      <td>7</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>638</th>
+      <td>Tehama, California</td>
+      <td>8/26/2020</td>
+      <td>6</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>639</th>
+      <td>Tehama, California</td>
+      <td>8/27/2020</td>
+      <td>2</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <th>640</th>
+      <td>Tehama, California</td>
+      <td>8/28/2020</td>
+      <td>2</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <th>641</th>
+      <td>Tehama, California</td>
+      <td>8/29/2020</td>
+      <td>12</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <th>642</th>
+      <td>Tehama, California</td>
+      <td>8/30/2020</td>
+      <td>7</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <th>643</th>
+      <td>Tehama, California</td>
+      <td>8/31/2020</td>
+      <td>2</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>644</th>
+      <td>Tehama, California</td>
+      <td>9/1/2020</td>
+      <td>2</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <th>645</th>
+      <td>Tehama, California</td>
+      <td>9/2/2020</td>
+      <td>1</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <th>646</th>
+      <td>Tehama, California</td>
+      <td>9/3/2020</td>
+      <td>7</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>647</th>
+      <td>Tehama, California</td>
+      <td>9/4/2020</td>
+      <td>7</td>
+      <td>1.92</td>
+    </tr>
+    <tr>
+      <th>648</th>
+      <td>Tehama, California</td>
+      <td>9/5/2020</td>
+      <td>6</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <th>649</th>
+      <td>Tehama, California</td>
+      <td>9/6/2020</td>
+      <td>5</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <th>650</th>
+      <td>Tehama, California</td>
+      <td>9/7/2020</td>
+      <td>8</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <th>651</th>
+      <td>Tehama, California</td>
+      <td>9/8/2020</td>
+      <td>0</td>
+      <td>1.12</td>
+    </tr>
+  </tbody>
+</table>
